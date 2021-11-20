@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-4</title>
+</head>
+<body>
+    <div class="calculate-box">
+        <p>Please input the first number:</p>
+        <input type="text" id="num1">
+        <p>Please input the second number:</p>
+        <input type="text" id="num2">
+        <input type="button" value="Calculate" onclick="calculate()">
+        <div id="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function calculate(){
+            
+            let a = Number(document.getElementById('num1').value);
+            let b = Number(document.getElementById('num2').value);
+            
+            //kiem tra nhập vào
+            if(a == '' || b == ''){
+                alert("Không được để trống");
+                return false;
+            }
+            //tinh tổng
+            let sum = a + b;
+            document.getElementById('result').innerHTML = `Result:  ${sum}`;
+        }
+    </script>
+</body>
+</html>

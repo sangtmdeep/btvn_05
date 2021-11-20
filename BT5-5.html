@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style5-5.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Navbar</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+  <div class="row">
+    <div class="col-md-3 list-item">
+      <ul class="list-group" id="list-item">
+        <li class="list-group-item active">Product list</li>
+        <li class="list-group-item">Categories</li>
+        <li class="list-group-item">New</li>
+        <li class="list-group-item">Membership</li>
+        <li class="list-group-item">Ordered products</li>
+        <li class="list-group-item add-item" id='add'>
+          <div class="input-group">
+            <input type="text" id="input-add">
+            <button class="btn btn-outline-secondary" type="button" id="btnAdd" onclick="add()">add</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item">
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="col-md-12 footer">
+
+  </div>
+  <script>
+    var listEl = document.getElementById("list-item");
+    var inputEl = document.getElementById("input-add");
+    var btnEl = document.getElementById("btnAdd");
+    function addItem() {
+      const newItem = document.createElement('li')
+      newItem.classList = "list-group-item";
+      newItem.innerText = inputEl.value;
+      listEl.appendChild(newItem);
+    }
+    btnEl.addEventListener("click", addItem);
+  </script>
+</body>
+
+</html>
